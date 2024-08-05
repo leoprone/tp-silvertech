@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/tp.css">
+</head>
+<body>
+    <h1>Leonardo Prone <br><br>TRABAJO FINAL - ANALISTA FUNCIONAL (SilverTech)</h1>
+    <section class="consigna">
+        <h2>CONSIGNA 1</h2>
+        <p> Crear una encuesta para relevar información de los usuarios, para 
+            crear una nueva funcionalidad de una app. 
+        </p>
+            <p style="text-align: left;"> A. La elección puede ser de 3 a 5 funcionalidades, para definir 
+            finalmente sobre una funcionalidad. <br>
+           </p>
+          <p style="text-align: left;">  B. La app puede ser una existente o una que aún no exista. <br>
+             
+           </p>
+    </section>
+    
+    <!--       RESPUESTA   FORMULARIO   -->
+
+    <section class="relato">
+        <p>
+           Este trabajo práctico se basa en un proyecto de sitio web por crearse llamado "Web Músicos", el cual tendrá como objetivo brindar un espacio para que sus visitantes puedan explorar y conocer músicos de Argentina.  
+        </p>
+        <p>
+            Como punto de partida, para obtener datos a partir de los cuales poder priorizar funcionalidades del sitio, se le enviaría, por distintos medios, una encuesta en forma de formulario a una lista de posibles visitantes del sitio, seleccionados en base a estudios previos de marketing (público objetivo: segmentación por rango etario, región, idioma, gustos musicales, etc).
+        </p>
+        <p>
+            La encuesta constaría de cuatro posibles opciones para que elijan solo una (la más relevante para los visitantes). <br>
+            La funcionalidad elegida por mayoría nos aportaría datos con los que fundamentar nuestra decisión sobre la funcionalidad más importante a priorizar.
+        </p>
+        <p>Dichas opciones son:
+            <ol>
+                <li>Poder elegir en qué plataforma de streaming escuchar los temas del músico</li>
+                        
+                <li >Poder escuchar los temas del músico dentro de "Web Músicos"</li>
+                <li>Poder suscribirse a la newsletter del músico</li>
+                <li>Ver agenda de presentaciones del músico</li>
+                
+            </ol>
+        </p>
+        <p style="text-decoration-line: underline;">Formulario enviado</p>
+        <div class="enlace-backlog">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd63huWz2gNgr3Ee4uBjsoBvBdelbeJR_nn1KTXMCkwUYi9Cw/viewform?embedded=true" target="_blank">Ir a Google Forms</a>
+        </div>
+        <p>También puede rellenarse aquí debajo</p>
+    </section>
+
+    <ol>
+      
+       <!--  <div class="enlace-backlog">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd63huWz2gNgr3Ee4uBjsoBvBdelbeJR_nn1KTXMCkwUYi9Cw/viewform?embedded=true" target="_blank">Ir a Google Forms</a>
+        </div> -->
+        <div id="encuesta" class="encuesta">
+       
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd63huWz2gNgr3Ee4uBjsoBvBdelbeJR_nn1KTXMCkwUYi9Cw/viewform?embedded=true" width="320" height="293" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+
+<section class="relato">
+    <p>La opción elegida por mayoría podríamos considerar que es la número 2:</p>
+
+    <p style="color: yellow; background-color: rgb(104, 103, 103);">Poder escuchar los temas del músico dentro de "Web Músicos"</p>
+</section>
+
+<br><br>
+<hr>
+
+       <!-- ---------------  CONSIGNA 2 --------     -->
+
+       <section class="consigna">
+        <h2>CONSIGNA 2</h2>
+        <p>
+         Crear 5 historias de usuario para una épica, que se llevará adelante en 2 
+            sprints.<br>
+             Estas  deben incluir: <br>
+            <p style="text-align: left;"> a. Nombre <br>
+             b. Descripción  <br>
+            c. Criterios de Aceptación<br>
+             d. Prioridad<br>
+             e. Fecha estimada de entrega.<br>
+             BONUS: FIBONACCI
+            </p>
+        </p>
+       </section>
+       <br><br>
+
+       <section class="relato">
+        <h2 style="background-color: transparent; padding: 25px; font-size: 35px;">Historias de usuario</h2>
+           
+        <p>Las historias de usuario fueron pensadas siguiendo la lógica más probable de acciones que tendría un visitante de "Web Músicos" que quisiera escuchar temas musicales de alguno de los artistas disponibles, y suponiendo que el primer sprint comienza el 05/08/2024 </p>
+        <div style="font-size: 25px; text-align: center; margin-bottom: 20px;">*criterios de aceptación en el reverso (pasar mouse por encima de cada tarjeta)</div>
+             
+    </section>
+      <br>
+        <div class="hdus-container">
+            
+            
+          
+            <div class="card animation">
+                <div class="face front">
+                    <div><i style="color: black; font-weight: bold;">Nombre: </i>Elegir músico</div>
+                    <div class="descripcion"><i style="color: black; font-weight: bold;">Descripción: </i>Como USUARIO quiero VER los NOMBRES DE LOS MÚSICOS del sitio web para ELEGIR uno que me interese conocer su obra</div>
+                    <div class="prioridad"><i style="color: black; font-weight: bold;">Prioridad Moscow: </i>Must have</div>
+                    <div class="fecha-entrega"><i style="color: black; font-weight: bold;">Fecha entrega: </i>19/08/2024</div>
+                    <div class="fibonacci"><i style="color: black; font-weight: bold;">Fibonacci: </i>5</div>
+               </div>
+               <div class="face back">
+                <div class="escenario">Elección de músico</div>
+
+                <div class="dado">Dado que un usuario ha accedido a la página principal del sitio</div>
+                <div class="cuando"> Cuando el usuario quiera explorar músicos</div>
+                <div class="entonces"> Entonces el usuario debería ver la lista de músicos del sitio</div>
+                <div class="y">Y debería  poder hacer clic sobre el elegido para acceder a su obra musical</div>
+              
+               </div>
+            </div>
+            <div class="card animation delay-3">
+                <div class="face front">
+                    <div><i style="color: black; font-weight: bold;">Nombre: </i>Elegir álbum</div>
+                    <div class="descripcion"><i style="color: black; font-weight: bold;">Descripción: </i>Como usuario quiero ver las tapas de los álbumes del músico para elegir uno que me interese</div>
+                    <div class="prioridad"><i style="color: black; font-weight: bold;">Prioridad Moscow: </i>Must have</div>
+                    <div class="fecha-entrega"><i style="color: black; font-weight: bold;">Fecha entrega: </i>19/08/2024</div>
+                    <div class="fibonacci"><i style="color: black; font-weight: bold;">Fibonacci: </i>3</div>
+               </div>
+               <div class="face back">
+                <div class="escenario">Elección de álbum</div>
+
+                <div class="dado">Dado que un usuario ha accedido a la página del músico</div>
+                <div class="cuando">Cuando el usuario quiera explorar álbumes</div>
+                <div class="entonces">Entonces el usuario debería ver las tapas de los álbumes para poder elegir uno</div>
+                <div class="y">Y debería poder hacer clic sobre el elegido para acceder a su contenido</div>
+              
+               </div>
+            </div>
+            <div class="card animation delay-5">
+                <div class="face front">
+                    <div><i style="color: black; font-weight: bold;">Nombre: </i>Elegir tema musical</div>
+                    <div class="descripcion"><i style="color: black; font-weight: bold;">Descripción: </i>Como usuario quiero ver la lista de temas del álbum para poder elegir uno que quiera escuchar</div>
+                    <div class="prioridad"><i style="color: black; font-weight: bold;">Prioridad Moscow: </i>Must have</div>
+                    <div class="fecha-entrega"><i style="color: black; font-weight: bold;">Fecha entrega: </i>19/08/2024</div>
+                    <div class="fibonacci"><i style="color: black; font-weight: bold;">Fibonacci: </i>8</div>
+                </div>
+                <div class="face back">
+                    <div class="escenario">Elección de tema musical</div>
+    
+                    <div class="dado">Dado que un usuario ha accedido a la página del álbum</div>
+                    <div class="cuando">Cuando el usuario quiera explorar temas musicales</div>
+                    <div class="entonces">Entonces el usuario debería ver la lista de temas del álbum</div>
+                    <div class="y">Y debería poder hacer clic sobre el tema elegido para acceder a la página que permite escucharlo</div>
+                  
+                   </div>
+            </div>
+            <div class="card animation delay-8">
+                <div class="face front">
+                    <div><i style="color: black; font-weight: bold;">Nombre: </i>Escuchar tema musical</div>
+                    <div class="descripcion"><i style="color: black; font-weight: bold;">Descripción: </i>Como usuario quiero poder dar "Play" al tema elegido para escucharlo dentro del sitio</div>
+                    <div class="prioridad"><i style="color: black; font-weight: bold;">Prioridad Moscow: </i>Must have</div>
+                    <div class="fecha-entrega"><i style="color: black; font-weight: bold;">Fecha entrega: </i>......</div>
+                    <div class="fibonacci"><i style="color: black; font-weight: bold;">Fibonacci: </i>8</div>
+                </div>
+                <div class="face back">
+                    <div class="escenario">Escucha de tema</div>
+    
+                    <div class="dado">Dado que un usuario ha accedido a la página del tema musical elegido</div>
+                    <div class="cuando">Cuando el usuario quiera escuchar el tema</div>
+                    <div class="entonces">Entonces el usuario debería ver un botón de "Play" donde hacer clic y poder escuchar el tema</div>
+                    <div class="y">Y luego debería ver un botón de "||" donde hacer clic para pausar la reproducción cuando quisiera</div>
+                    <div class="y">Y luego debería ver un botón de "Play" donde hacer clic para retomar la reproducción cuando quisiera</div>
+                  
+                </div>
+            </div>
+            <div class="card animation">
+                <div class="face front">
+                    <div><i style="color: black; font-weight: bold;">Nombre: </i>Navegar entre los temas musicales de un álbum</div>
+                    <div class="descripcion"><i style="color: black; font-weight: bold;">Descripción: </i>Como usuario quiero acceder directamente al tema anterior y al posterior al actual para poder escucharlo sin tener que volver a página del álbum</div>
+                    <div class="prioridad"><i style="color: black; font-weight: bold;">Prioridad Moscow: </i>Should have</div>
+                    <div class="fecha-entrega"><i style="color: black; font-weight: bold;">Fecha entrega: </i>.....</div>
+                    <div class="fibonacci"><i style="color: black; font-weight: bold;">Fibonacci: </i>5</div>
+                </div>
+                <div class="face back">
+                    <div class="escenario">Navegación entre los temas musicales del álbum</div>
+    
+                    <div class="dado">Dado que un usuario ha accedido a la página del tema elegido</div>
+                    <div class="cuando">Cuando el usuario quiere acceder al tema anterior o al posterior dentro del álbum</div>
+                    <div class="entonces">Entonces el usuario debería ver un botón que diga "Anterior" para hacer clic y poder escuchar el tema anterior, y ver un botón que diga "Siguiente" para hacer clic en él y acceder al tema próximo</div>
+                    
+            </div> 
+        </div>
+    </div>
+
+
+
+<br>
+<br>
+<hr>
+
+
+
+<!--  ..........................BACKLOG .........-->
+ 
+<section class="consigna">
+    <h2>CONSIGNA 3</h2>
+    <p>Elaborar backlog técnico y funcional de un primer sprint/ Excel, 
+        spreadsheet con acceso al docente de clase</p>
+</section>
+
+<!-- 
+        <li class="item">
+            <p>
+                3) Elaborar backlog técnico y funcional de un primer sprint/ Excel, 
+                spreadsheet con acceso al docente de clase. 
+            </p>
+            <p><i>
+                Este punto será evaluado según la completitud y organización del backlog técnico y funcional en un 
+archivo Excel o spreadsheet.<br>
+ Aprobado: El backlog técnico y funcional se encuentra completo y organizado en un archivo Excel o 
+spreadsheet.<br>
+ Excelente/Muy Bueno:Además de estar completo y organizado, el backlog técnico y funcional 
+demuestra una estructura avanzada y una presentación visualmente atractiva.
+            </i></p>
+        </li> -->
+        <br><br>
+        
+        <section class="relato">
+            <p>El desarrollo de la funcionalidad elegida estaría guiado por 5 historias de usuario siguiendo el orden lógico que respeta la secuencia de acciones del visitante que quiera escuchar un tema musical:</p>
+    
+            <p>El orden sería el siguiente:</p>
+           
+            <p>
+                <ul>
+                    <li>HDU-1: Elegir un músico</li>
+                    <li>HDU-2: Elegir un álbum de ese músico</li>
+                    <li>HDU-3: Elegir un tema musical de ese álbum</li>
+                    <li>HDU-4: Escuchar el tema musical dentro del sitio</li>
+                    <li>HDU-5: Navegar entre los temas musicales de ese álbum (si lo deseara)</li>
+            </ul>
+            </p>
+
+
+
+            <h2 style="background-color: transparent; padding: 25px; font-size: 35px;">Primer Sprint</h2>
+
+            <p>El backlog del Sprint 1 contiene las historias de usuario HDU-1, HDU-2 y HDU-3, y muestra imágenes de las páginas web correspondientes a cada HDU a modo de referencia visual   </p>
+            <p>*El backlog técnico podría formar parte del Sprint 2, luego de desarrollar las HDU-5 y HDU-6, ya que recién en esa instancia se podría incluir el control técnico de carga de los temas musicales a reproducir </p>
+           
+        </section>
+<div class="enlace-backlog">
+  <a href="https://1drv.ms/x/c/414e53e129ff1116/EYZhl_lw7PBGoymvibL43fsB0hKoC_z5M_X0OB7rT6wBKA?e=g6gwjW&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMTAwLTAwMDAwMDAwMDAwMH0" target="_blank">Ver backlog en Excel</a>
+</div>       
+<section class="relato">
+    
+   <p>También se puede consultar el backlog en Excel embebido aquí debajo</p>
+</section>
+<div class="backlog">
+            <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/414e53e129ff1116/IQOGYZf5cOzwRqMpr4my-N37AWLG8NQeoovg01KxbPL3dx0?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</div>
+<br>
+<br>
+<hr>
+
+
+<!--.................  JIRA .............-->
+
+<section class="consigna">
+    <h2>CONSIGNA 4</h2>
+    <p>
+        Llevar ese backlog a Jira/ Board . <br>
+         Construir tablero de cero. </p>
+</section>
+<br>
+<br>
+<br>
+<!-- 
+<li class="item">
+            <p>
+                4) Llevar ese backlog a Jira/ Board . <br>
+                1. Construir tablero de cero. <br>
+                2.
+                 No está permitido usar un tablero comunitario ni los creados en el 
+                workshop debes crear uno nuevo con tu cuenta personal de Jira.<br>
+                 3. Si Jira se les bloquea, pueden usar Aasana, Click Up o Trello o 
+                alguna herramienta de las que el profesor demostró en clase. 
+            </p>
+            <p><i>
+                Este punto se evaluará la habilidad para trasladar el backlog a Jira o una herramienta alternativa 
+construyendo un tablero desde cero.<br>
+ Aprobado: Construye el tablero en Jira.<br>
+ Excelente/Muy Bueno: Construye el tablero en Jira de manera completa y organizada.
+            </i></p>
+        </li> -->
+
+        <h2 style="background-color: transparent; padding: 20px; font-size: 30px;">JIRA SOFTWARE</h2>
+        <section class="relato">
+            <p>Se trasladó a Jira Software el backlog del primer sprint y se agregaron las últimas 2 historias de usuario (HDU-4 y HDU-5) que quedarían para ser abordadas en el segundo sprint</p>
+            <p>En Jira, se creó una Épica llamada "Escuchar música en el sitio", el cual constará de 2 Sprints. El primer Sprint incluye la HDU-1, HDU-2 y HDU-3</p>
+             <p>El primer Sprint comenzaría el 05/08/2024 y durará 2 semanas</p>
+             <p>En el tablero del Sprint 1 se muestran imágenes de las páginas web correspondientes a cada HDU a modo de referencia visual</p>
+              <p>Las HDU-5 y HDU-6 quedan dentro del backlog para ser contempladas recién en el segundo Sprint</p>
+            
+            </section>
+        <p style="text-align: center; font-size: 25px;">(dar "clic" en el siguiente enlace)</p>
+        <div class="enlace-jira">
+            <a href="https://leonardo-prone-jira.atlassian.net/jira/software/projects/LEO/boards/2/backlog?atlOrigin=eyJpIjoiMWZjOWQ2NmM3ZGQ2NDRmZjkxMmNmMjIwOTBkODYxNjciLCJwIjoiaiJ9" target="_blank">Ir a Jira</a>
+        </div>
+      
+<br><br><br>
+<hr>
+
+     <section class="consigna">
+        <h2>CONSIGNA 5</h2>
+        <p>Adherir diagrama de flujo derivado de la información del 
+            backlog de acuerdo a lo visto en clase</p>
+     </section>
+
+
+        <h2 style="background-color: transparent; padding: 25px; font-size: 28px;">DIAGRAMA DE FLUJO (funcionalidad completa)</h2>
+       
+       <section class="relato">
+        <p>
+            A continuación se muestra un diagrama de flujo de la funcionalidad 
+        </p>
+       </section>
+       
+        <!--  <li class="item">
+            <p>
+                5) Adherir diagrama de flujo derivado de la información del 
+                backlog de acuerdo a lo visto en clase. Ver ejemplos de clase 6  
+                Diagramacion de Sistemas I - Conceptos Básicos
+            </p>
+            <p><i>
+                El criterio de evaluación se centrará en la creación de un diagrama de flujo claro y coherente, 
+basado en la información del backlog presentada en clase<br>
+ Aprobado : Crea un diagrama de flujo que refleje la secuencia de tareas derivadas del backlog<br>
+ Excelente/Muy Bueno:El diagrama de flujo va más allá de simplemente representar la secuencia de 
+tareas, añadiendo detalles adicionales o mejoras visuales que facilitan la comprensión.
+            </i></p>
+        </li> -->
+
+     <div class="flujo-container">
+        <img src="assets/diagrama_flujo.jpg" alt="">
+      
+      </div>
+
+<br><br><br><hr>
+
+
+<!--...............................EXPERIENCIA DE USUARIO ..................-->
+
+<section class="consigna">
+    <h2>CONSIGNA 6</h2>
+    <p> Diseñar la experiencia de usuario del diagrama derivado</p>
+</section>
+
+
+
+
+<section class="relato">
+    <p>A continuación se muestran las distintas interfaces con las que interactuaría el visitante, donde pueden verse las acciones a realizarse para lograr el objetivo de escuchar un tema musical de un músico particular </p>
+</section>
+<!-- 
+        <li class="item">
+            <p>
+                6) Diseñar la experiencia de usuario del diagrama derivado en con la 
+                herramienta que sugiera el profesor.<br>
+                 ● Usar para exponerlo cualquiera de estas herramientas: Miro, Figma, 
+                Adobe, PPT, Sketch, Genially, Google Sheets. 
+            </p>
+            <p><i>
+                Se evaluará la experiencia de usuario del diagrama derivado en base a la claridad en la 
+representación de las interacciones del usuario, la accesibilidad de la información y la coherencia 
+con los principios de diseño UX enseñados en clase<br>
+ Aprobado:La experiencia de usuario del diagrama muestra una representación clara de las 
+interacciones del usuario y la información relevante.<br>
+ Excelente/Muy Bueno:La experiencia de usuario del diagrama va más allá de lo básico, ofreciendo 
+una representación altamente intuitiva y atractiva de las interacciones del usuario.
+            </i></p>
+        </li> -->
+<br>
+<br>
+<br>
+<br>
+
+
+        <div class="ux-container">
+           <!--   <div class="pantalla home-general"></div>
+            <div class="pantalla home-musico"></div>
+           
+           
+            <div class="pantalla album-lista-temas"></div>
+            <div class="pantalla tema-individual"></div>
+  -->
+        </div>
+
+        
+       <hr>
+       <br>
+
+
+ 
+       <section class="consigna">
+        <h2>CONSIGNA 7</h2>
+        <P>
+            Exponer trabajo en formato video. <br>
+            Presentar  el  trabajo mediante un video explicativo. (Puedes 
+            optar por utilizar tu voz en off sin necesidad de aparecer en 
+            cámara.) 
+        </P>
+       </section>
+
+       <section class="relato">
+        <h2 style="background-color: transparent; font-size: 30px;">VIDEO EXPLICATIVO</h2>
+     
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tE_5EEjkjIU?si=POYJNLw66jHmVJVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+        <br>
+        <br>
+       
+       </section> 
+       
+        <div class="enlace-backlog">
+            <a target="_blank" href="https://leoprone.github.io/pablocomas/home_general.html">Ir a Web Músicos en construcción</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+       <br>
+       <br>
+       <br>
+       <br>
+
+       <!--  <li class="item">
+            <p>
+                Exponer trabajo en formato video. 
+                ● Presentar  el  trabajo mediante un video explicativo. (Puedes 
+                optar por utilizar tu voz en off sin necesidad de aparecer en 
+                cámara.) <br>
+                ● Se valorarán skill de comunicación.<br>
+                 ● Adjunta un documento en el campus virtual con el link del  
+                video subido previamente a Google Drive. <br>
+            </p>
+        </li> -->
+     </ol>
+
+   
+
+</body>
+</html>

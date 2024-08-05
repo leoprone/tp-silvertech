@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, gray 0, black 10%) ;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 100px 0;
+}
+
+
+.consigna{
+    width: 70%;
+    height: auto;
+    margin: 100px auto 50px auto;
+    background-color: gray;
+
+}
+
+.consigna p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+    font-style: italic;
+    padding: 20px;
+}
+
+hr{
+    
+    box-shadow: 0 0 1rem .5rem white;
+}
+.relato{
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    
+
+}
+
+.relato p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(148, 145, 145);
+    font-size: 30px;
+    
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.relato li{
+    
+    font-size: 25px;
+    margin: 8px 5px;
+}
+
+.item{
+    width: 50%;
+    list-style: decimal;
+    margin: 50px auto;
+    color: white;
+    font-size: 30px;
+   background-color: rgb(158, 152, 152);
+}
+
+.item p{
+    font-size: 30px;
+    color: rgb(177, 174, 174);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 0, 0, 0.785);
+}
+
+
+.encuesta{
+    position: relative;
+    width: 280px;
+    height: 350px;
+    display: block;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+
+    border-radius: 10px;
+    
+    
+    text-align: center;
+    
+    margin: -80px auto 10px auto;
+}
+
+.encuesta iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+   
+}
+
+
+@media screen and (min-width: 768px){
+    .encuesta{
+        width: 600px;
+        height: 800px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .encuesta{
+        width: 1000px;
+        height: 1200px;
+    }
+}
+
+.hdus-container{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    font-size: 1px;
+    margin: -60px auto 0 auto;
+    
+}
+
+.hdus-container .hdu-titulo{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 6px rgb(226, 218, 218);
+    color: white;
+    font-size: 55em;
+    padding-top: 10px;
+    margin: 90px auto;
+}
+
+
+.card{
+    position: relative;
+    width: 270em;
+    height: 400em;
+    border-radius: 4px;
+    margin: 30px;
+    
+}
+
+.animation{
+    animation: Historias 12s ease-in-out infinite;
+}
+
+
+
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    backface-visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 4px;
+    transition: 1.2s;
+   
+}
+
+
+.face::-webkit-scrollbar{
+    width: 6px;
+    
+     background: rgba(205, 205, 235, 0.989); 
+  }
+  
+  .face::-webkit-scrollbar-thumb{
+  
+    
+    border-radius: 20px;
+    background: rgb(170, 57, 57);
+  
+   
+  }
+
+
+
+
+
+.face>*{
+
+    width: 92%;
+    height: auto;
+    
+    margin: 1em auto;
+    
+    
+    padding: 5px 10px;
+   font-size: 16em;
+    background-color: rgb(255, 121, 68);
+    border-radius: 5px;
+  
+}
+
+
+
+@keyframes Historias{
+    0%{
+        transform: perspective(1000px) rotateY(0);
+    }
+    30%{
+        transform: perspective(1000px) rotateY(-20deg);
+    }
+50%{
+        transform: perspective(1000px) rotateY(-5deg);
+    }
+    60%{
+        transform: perspective(1000px) rotateY(-10deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(0);
+    }
+}
+
+
+.card .front{
+    background-color: rgb(254, 174, 131);
+     transform: perspective(1000px) rotateY(0deg);
+     box-shadow: 0 5px 1rem .5rem #e9e7e7;
+     overflow-y: hidden;
+     padding-top: 5px;
+    
+     
+}
+
+.delay-3{
+    animation-duration: 20s;
+    animation-delay: 3s;
+}
+
+.delay-5{
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.delay-8{
+    animation-duration: 15s;
+    animation-delay: 8s;
+}
+
+
+.card .back{
+    transform: perspective(1000px) rotateY(180deg);
+ /*    display: flex;
+    flex-direction: column; */
+    
+    background-color: rgb(199, 74, 74);
+    box-shadow: 0 5px 1rem .5rem #e9e7e7;
+}
+
+
+.back .escenario{
+    text-align: center;
+    font-size: 20em;
+    color: rgb(255, 255, 255);
+    
+    background-color: rgb(50, 49, 49);
+    
+
+}
+
+
+
+.card .front div:nth-child(1){
+  
+  font-size: 20em;
+  color: red;
+  font-weight: bold;
+  background-color: white;
+  
+  padding: 10px;
+     
+}
+
+.card:hover{
+    animation: none;
+}
+
+
+
+
+
+.card:hover .front{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(1000px) rotateY(360deg);
+}
+
+
+h2{
+    text-align: center;
+    color: red;
+    background-color: rgb(202, 200, 200);
+    font-size: 35px;
+    padding: 10px;
+    text-shadow: 5px 5px 5px rgb(40, 39, 39);
+    margin: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+    h2{
+        font-size: 50px;
+    }
+    
+}
+
+@keyframes EnlaceBacklog{
+    0%{
+        box-shadow: 0 0 1rem .5rem rgb(84, 83, 83);   }
+    25%{
+        box-shadow: 0 0 1rem .3rem red;
+    }
+    50%{
+        box-shadow: 0 0 1rem .5rem white;
+    }
+    75%{
+        box-shadow: 0 0 1rem .3rem red;
+    }
+    100%{
+        box-shadow: 0 0 1rem .5rem rgb(84, 82, 82);   }
+}
+
+
+.enlace-jira{
+    width: 80%;
+    height: 400px;
+    margin: 80px auto;
+    background-color: white;
+    background-image: url("../assets/jira.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: solid 8px gray;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem .5rem rgb(215, 213, 213);
+  
+}
+
+
+.enlace-backlog, .enlace-jira{
+    text-align: center;
+    
+}
+
+.enlace-backlog a, .enlace-jira a{
+    display: inline-block;
+    background-color: red;
+   color: white;
+   font-weight: bold;
+   text-shadow: 2px 2px 4px black;
+   font-size: 25px;
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+   box-shadow: 0 0 .5rem .5rem rgb(249, 54, 54);
+   animation: EnlaceBacklog 2s linear infinite;
+   transition: .3s;
+}
+
+.enlace-jira a{
+    margin: 170px auto;
+    box-shadow: 0 0 .5rem .5rem rgb(249, 54, 54);
+}
+.enlace-backlog a:hover, .enlace-jira a:hover{
+  
+    transform: scale(.98);
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0 0 .5rem .3rem rgb(223, 220, 220);
+    animation: none;
+ }
+
+.backlog{
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+    background-color: rgb(162, 163, 163);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem .5rem white;
+}
+
+.backlog>*{
+    width: 100%;
+    height: 100%;
+}
+
+
+.jira-container{
+    width: auto;
+    height: auto;
+    color: white;
+
+}
+
+.flujo-container{
+    position: relative;
+    max-width: 300px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: gray;
+    border: solid 8px black;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem .7rem white;
+}
+
+.flujo-container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 450px){
+    .flujo-container{
+        position: relative;
+        max-width: 450px;
+        height: 750px;
+        margin: 100px auto;
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .flujo-container{
+        position: relative;
+        max-width: 600px;
+        height: 1000px;
+        margin: 100px auto;
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .flujo-container{
+        position: relative;
+        max-width: 900px;
+        height: 1500px;
+        margin: 100px auto;
+        background-color: gray;
+    }
+}
+
+
+
+.ux-container{
+ width: 300px;
+ height: 1800px;
+ 
+ position: relative;
+ margin: 50px auto;
+ background-image: url("../assets/ux_vertical_interacciones.jpg");
+ background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+@media screen and (min-width: 768px){
+    .ux-container{
+        width: 520px;
+ height: 950px;
+        background-image: url("../assets/dos_y_dos_interacciones.jpg");
+ background-repeat: no-repeat;
+    background-size: cover;
+    }
+} 
+ 
+@media screen and (min-width: 1024px){
+    .ux-container{
+        width: 1020px;
+ height: 500px;
+        background-image: url("../assets/ux_horizontal_interacciones.jpg");
+ background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -5px 0;
+    }
+}  
+
+
+.pantalla{
+    --border-color: rgb(220, 201, 201);
+  position: relative;
+  width: 294px;
+  height: 480px;
+  margin: 35px;
+  border-radius: 20px;
+  border-top: 20px solid var(--border-color);
+  border-right: 5px var(--border-color) solid;
+  border-left: 5px var(--border-color) solid;
+  border-bottom: 35px var(--border-color) solid;
+  box-shadow: 0 0 1rem .5rem rgb(189, 187, 187);
+  background-position: -30px 0;
+}
+
+.home-general{
+    background-image: url("../assets/home_general.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home-musico{
+    background-image: url("../assets/home-comas.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    height: 480px;
+     background-position: 0px 0px; 
+}
+
+
+.home-comas-albumes{
+    background-image: url("../assets/home_comas_albumes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -218px;
+    box-shadow: none;
+}
+.album-cerrado{
+    background-image: url("../assets/album_cerrado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.album-lista-temas{
+    background-image: url("../assets/album_lista_temas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tema-individual{
+    background-image: url("../assets/tema_individual.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.video-container{
+    position: relative;
+    max-width: 280px;
+    height: 157.5px;
+    margin: 0 auto;
+    border: 5px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem .5rem white;
+}
+
+.video-container>*{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .video-container{
+        
+        max-width: 560px;
+        height: 315px;
+        margin: 0 auto;
+    }
+}
